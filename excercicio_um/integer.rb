@@ -25,12 +25,18 @@ class Integer
     roman_hash.reduce("") do |res, (arab, roman)|
       #o numero é dividido por todas as hash's até encontrar um divisor comum 
       parte_inteira, num = num.divmod(arab)
-      #os divisores comuns sao acumulados no resultado como hash
+      #as keys dos divisores comuns sao acumulados no resultado como hash
       res << roman * parte_inteira
     end
   end
 end
 
 #testes
-puts 3.to_roman
-puts 1645.to_roman
+puts 3.to_roman #ok
+puts 1645.to_roman #ok
+puts 3999.to_roman #ok
+
+#observacoes
+#o algoritimo funciona perfeitamente dos numeros 1 até 3999
+#a partir do 4000 existem variacoes nos simbolos que vão alem dos limites do mapeamento inicial, mas acredito que a ideia do desafio foi alcancada 
+puts 5000.to_roman #erro devido as limitaçoes da tabela  
