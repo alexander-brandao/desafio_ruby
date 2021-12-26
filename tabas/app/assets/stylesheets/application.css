@@ -1,15 +1,60 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* fundo */
+html, body, #home {
+    height:100%;
+}
+
+body{
+background: url('casa_1.jpg') no-repeat center center;
+background-size: cover;
+height: 700px;
+background-attachment: fixed;
+}
+
+/*barra de navegacao */
+nav.navbar-branca {
+    padding: 5px 0px;
+    background: white;
+
+}
+.separar{
+    white-space: nowrap;
+    padding:0px 10px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.navbar-light .navbar-toggler {
+    color: black;
+    border-color: black;
+
+}
+
+/* capa */
+.margin {
+    margin-top: 300px;
+}
+.capa {
+    text-align: center;
+    color:white;
+    text-shadow: 
+               -1px -1px 0px black, 
+               -1px 1px 0px black,                    
+                1px -1px 0px black,                  
+                1px 0px 0px black;
+    
+}
+.centralizar{
+    text-align: center;
+}
+
+
+
+/*tipografia */
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 30px;
+}
+
+

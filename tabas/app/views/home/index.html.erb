@@ -1,35 +1,37 @@
     
    
     <header><!--inicio cabecalho--> 
-      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-branca">
         <div class="container">
 
           <a href="" class="navbar-brand">
-            <%= image_tag("tabas.svg", :alt => "tabas",style: 'height:15%;width:15%;') %>
+            <%= image_tag("tabas.svg", :alt => "tabas",style: 'height:20%;width:20%;') %>
           </a>
 
           <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-            <i class="fas fa-bars text-white"></i>
+            <i class="fas fa-bars text-black"></i>
           </button>
 
           <div class="collapse navbar-collapse" id="nav-principal">
-            <ul class="navbar-nav ml-auto">
-              <li class="navbar-item">
-                <a href="" class="nav-link">Premium</a>
+            <ul class="navbar-nav ml-auto ">
+              <li class="navbar-item separar">
+                <a href="" class="nav-link">APARTMENTS</a>
               </li>
-              <li class="navbar-item">
-                <a href="" class="nav-link">Ajuda</a>
+              <li class="navbar-item separar">
+                <a href="" class="nav-link">PROPERTY OWNER</a>
               </li>
-              <li class="navbar-item">
-                <a href="" class="nav-link">Baixar</a>
+              <li class="navbar-item separar">
+                <a href="" class="nav-link">CORPORATE</a>
               </li>
-              <li class="navbar-item divisor">|</a>
+              <li class="navbar-item separar">
+              <a href="" class="nav-link">BLOG</a>
               </li>
-              <li class="navbar-item">
-                <a href="" class="nav-link">Inscrever-se</a>
+              <li class="navbar-item separar">
+                 <a class="nav-link"><%= image_tag("globe.png", :alt => "globe",style: 'height:auto;width:auto;') %>  </a>
+                 
               </li>
-              <li class="navbar-item">
-                <a href="" class="nav-link">Entrar</a>
+              <li class="navbar-item separar">
+                <a href="" class="nav-link">SUPPORT</a>
               </li>
             </ul>
           </div>
@@ -42,8 +44,28 @@
     <section id="home" class="d-flex"><!-- inicio home-->
       <div class="container align-self-center"><!-- inicio container-->
         <div class="row"><!-- inicio row-->
-          <h1>Your home wherever you are</h1>
-          <h6>Beautifully designed, fully furnished apartments in São Paulo and Rio de Janeiro to make you feel at home</h6>
+            <div class="col-md-12 centralizar">
+
+                <h1 class="capa margin">Your home wherever you are</h1>
+                <h6 class="capa">Beautifully designed, fully furnished apartments in São Paulo and Rio de Janeiro to make you feel at home</h6>
+
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-light">Explore a place</button>
+
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Search
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <li><a class="dropdown-item" href="#">Rio de Janeiro</a></li>
+                        <li><a class="dropdown-item" href="#">São Paulo</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+           
         </div><!-- fim row-->
       </div><!-- fim container-->
     </section><!-- fim home-->
@@ -51,7 +73,43 @@
     <section id="servicos" class="caixa"><!-- INICIO Servicos -->
       <div class="container">
         <div class="row">
-          
+            <div class="col-md-12">
+                <span>PREMIUM CHOICE</span>
+                <h3>Living in a Tabas home</h3>
+                <h5> We offer fully renovated apartments at the best locations in São Paulo and Rio de Janeiro. Ease, comfort and much more.</h5>
+                
+
+                <div class="col-md-6 card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Beautiful interior design</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Flexible renting</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Support service</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Ultra high-speed Internet</p>
+                    </div>
+                </div>
+
+
+                <a class="btn btn-dark" href="#" role="button">Rent now</a>
+            </div> 
         </div>
       </div>
     </section><!-- FIM Servicos -->
@@ -88,3 +146,7 @@
 
     </footer>
 
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
