@@ -5,9 +5,10 @@ html, body, #home {
 
 body{
 background: url('casa_1.jpg') no-repeat center center;
-background-size: cover;
-height: 700px;
 background-attachment: fixed;
+font-family: Helvetica, Arial, sans-serif;
+height: 100%;
+background-size: cover;
 }
 
 /*barra de navegacao */
@@ -32,7 +33,7 @@ nav.navbar-branca {
 
 /* capa */
 .margin {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 .capa {
     text-align: center;
@@ -47,7 +48,38 @@ nav.navbar-branca {
 .centralizar{
     text-align: center;
 }
+/* conteudos */
+#servicos {
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cartao {
+    padding: 40px 20px;
+    margin: 0px 10px;
+}
+.img{
+    text-align: center;
+    height:50px;
+    width:50px;
+}
+.gif{
+    height:400px;
+    width:600px;
+}
+.logo{
+    height:30px;
+    width:120px;
+}
 
+
+#recursos{
+    text-align: center;
+    background-color:rgb(248, 249, 254);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 
 /*tipografia */
@@ -56,5 +88,32 @@ h1 {
     letter-spacing: -0.05em;
     margin-bottom: 30px;
 }
+span {
+    color:rgb(102, 107, 110);
+    font-weight: 900;
+}
 
+h3 {
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color:rgb(102, 107, 110);
+    font-weight: 500;
+    font-size: 1.5em;
+}
+h6{
+    color: black;
+}
+
+/*footer*/
+
+footer{
+    background-color:rgb(248, 249, 254);
+}
+footer, p {
+    color:rgb(102,107,110);
+}
 
