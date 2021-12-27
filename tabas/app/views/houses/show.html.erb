@@ -1,0 +1,54 @@
+<div class="container table">
+<p id="notice"><%= notice %></p>
+
+  <div class="col-md-6 margin">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+        <h1>
+         <p>
+            <strong>Name:</strong>
+            <%= @house.name %>
+          </p>
+        </h1> 
+          <p>
+            <strong>Address:</strong>
+            <%= @house.address %>
+          </p>
+
+          <p>
+            <strong>Prince:</strong>
+            <%= @house.prince %>
+          </p>
+
+          <p>
+            <strong>Rooms:</strong>
+            <%= @house.rooms %>
+          </p>
+          
+          <p>
+            <strong>Bathrooms:</strong>
+            <%= @house.bathrooms %>
+          </p>
+
+          <p>
+            <strong>Picture one:</strong>
+            <%= @house.picture_one %>
+          </p>
+
+          <p>
+            <strong>Picture two:</strong>
+            <%= @house.picture_two %>
+          </p>
+
+          <p>
+            <strong>Picture three:</strong>
+            <%= @house.picture_three %>
+          </p>
+
+
+
+          <%= link_to 'Edit', edit_house_path(@house), class:"btn btn-outline-light" %>
+          <%= link_to 'Back', houses_path, class:"btn btn-outline-light" %>
+        </div>
+      </div>
+
+</div>

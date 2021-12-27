@@ -1,0 +1,43 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1 class="margin">Houses</h1>
+
+<table class="table table-dark table-striped table-hover table-bordered">
+  <thead >
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Prince</th>
+      <th>Rooms</th>
+      <th>Bathrooms</th>
+      <th>Picture one</th>
+      <th>Picture two</th>
+      <th>Picture three</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @houses.each do |house| %>
+      <tr>
+        <td><%= house.name %></td>
+        <td><%= house.address %></td>
+        <td><%= house.prince %></td>
+        <td><%= house.rooms %></td>
+        <td><%= house.bathrooms %></td>
+        <td><%= house.picture_one %></td>
+        <td><%= house.picture_two %></td>
+        <td><%= house.picture_three %></td>
+        <td><%= link_to 'Show', house %></td>
+        <td><%= link_to 'Edit', edit_house_path(house) %></td>
+        <td><%= link_to 'Destroy', house, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New House', new_house_path, class:"btn btn-dark" %>
+</div>

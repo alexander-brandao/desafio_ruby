@@ -1,0 +1,59 @@
+<div class="form-control">
+<%= form_with(model: house) do |form| %>
+  <% if house.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(house.errors.count, "error") %> prohibited this house from being saved:</h2>
+
+      <ul>
+        <% house.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, class:"form-text form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address, class:"mt-2" %>
+    <%= form.text_field :address, class:"form-text form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prince, class:"mt-2" %>
+    <%= form.number_field :prince, class:"form-text form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rooms, class:"mt-2" %>
+    <%= form.number_field :rooms, class:"form-text form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bathrooms, class:"mt-2" %>
+    <%= form.number_field :bathrooms, class:"form-text form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture_one, class:"mt-2" %>
+    <%= form.text_field :picture_one, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture_two, class:"mt-2" %>
+    <%= form.text_field :picture_two, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture_three, class:"mt-2" %>
+    <%= form.text_field :picture_three, class: "form-control" %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= form.submit class:"btn btn-dark" %>
+  </div>
+<% end %>
+</div>

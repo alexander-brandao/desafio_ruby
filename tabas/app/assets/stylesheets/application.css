@@ -9,7 +9,7 @@ height: 100%;
 
 }
 #index{
-background: url('casa_1.jpg') no-repeat center center;
+background: url('casa_2.jpg') no-repeat center center;
 background-attachment: fixed;
 font-family: Helvetica, Arial, sans-serif;
 height: 100%;
@@ -37,7 +37,7 @@ nav.navbar-branca {
 
 /* capa */
 .margin {
-    margin-top: 200px;
+    margin-top: 150px;
 }
 .capa {
     text-align: center;
@@ -117,7 +117,7 @@ h6{
 footer{
     background-color:rgb(248, 249, 254);
 }
-footer, p {
+footer{
     color:rgb(102,107,110);
 }
 
