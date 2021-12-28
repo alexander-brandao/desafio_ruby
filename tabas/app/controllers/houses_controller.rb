@@ -1,6 +1,6 @@
 class HousesController < ApplicationController
   before_action :set_house, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!, except: [:index,:show]
   # GET /houses or /houses.json
   def index
     @houses = House.all
@@ -65,6 +65,6 @@ class HousesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def house_params
-      params.require(:house).permit(:name, :address, :prince, :rooms, :bathrooms, :picture_one, :picture_two, :picture_three)
+      params.require(:house).permit(:name, :address, :prince, :rooms, :bathrooms, :picture_one, :picture_two, :picture_three, :user_id)
     end
 end
