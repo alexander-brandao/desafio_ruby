@@ -9,7 +9,7 @@ height: 100%;
 
 }
 #index{
-background: url('casa_2.jpg') no-repeat center center;
+background: url('apartments_6.jpg') no-repeat center center;
 background-attachment: fixed;
 font-family: Helvetica, Arial, sans-serif;
 height: 100%;
@@ -54,6 +54,20 @@ nav.navbar-branca {
     
     
 }
+
+.capa-carro{
+    height:750px;
+    width:1250px;
+}
+.seg-carro{
+    height:140px;
+    width:140px;
+}
+.ter-carro{
+    height:500px;
+    width:500px;
+}
+
 .centralizar{
     text-align: center;
 }
